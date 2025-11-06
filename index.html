@@ -12,25 +12,28 @@
   </head>
   <body>
     <main>
-      <label>
+      <label for="currency-from-select">
         Converter <b>de</b>
-        <select>
-          <option>R$ Real Brasileiro</option>
+        <select id="currency-from-select">
+          <option value="BRL">R$ Real Brasileiro</option>
         </select>
       </label>
 
-      <label>
+      <label for="currency-to-select">
         Converter <b>para</b>
-        <select class="select-currency">
+        <select id="currency-to-select" class="select-currency">
           <option value="Dolar">US$ Dólar americano</option>
           <option value="Euro">€ Euro</option>
-          <option value="Libra">£ libra</option>
+          <option value="Libra">£ Libra</option>
+          <option value="Bitcoin">₿ Bitcoin</option>
         </select>
       </label>
-      <label>
-        <b>valor</b>
-        <input id="input-currency" placeholder="R$10.000,00">
-        </label>
+
+      <label for="input-currency">
+        <b>Valor</b>
+        <input id="input-currency" placeholder="R$ 10.000,00" />
+      </label>
+
       <button class="convert-button">Converter</button>
       <section>
         <div class="currency-box">
